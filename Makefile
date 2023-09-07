@@ -13,7 +13,7 @@ TARGET = $(DIR_BIN)/main
 
 # .o文件生成的条件
 $(DIR_OBJ)/%.o : $(DIR_SRC)/%.c
-	@gcc -c  $^ -o $@  
+	$CC -c  $^ -o $@  
 
 #编译生成可执行文件
 #$(TARGET) : $(OBJ)
